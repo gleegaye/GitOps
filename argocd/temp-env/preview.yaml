@@ -8,7 +8,7 @@ metadata:
 spec:
   project: previews
   source:
-    path: argocd/temp-env/{{.REPO}}/helm
+    path: argocd/temp-env
     repoURL: https://github.com/gleegaye/gitops.git
     targetRevision: HEAD
     helm:
