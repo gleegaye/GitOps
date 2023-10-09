@@ -19,8 +19,8 @@ spec:
         ingress:
           host: "pr-devops-toolkit-1..nip.io"
       version: v3
-    path: helm
-    repoURL: https://github.com/gleegaye/gitops/tree/main/argocd/temp-env/helm/devops-toolkit.git
+    path: argocd/temp-env/helm/devops-toolkit
+    repoURL: https://github.com/gleegaye/gitops.git
     targetRevision: HEAD
   syncPolicy:
     automated:
