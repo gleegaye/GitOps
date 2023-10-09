@@ -8,7 +8,7 @@ metadata:
 spec:
   project: previews
   source:
-    repoURL: https://github.com/vfarcic/argocd-previews.git
+    repoURL: https://github.com/gleegaye/gitops/tree/main/argocd/temp-env
     targetRevision: HEAD
     path: helm
   destination:
