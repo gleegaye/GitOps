@@ -8,9 +8,9 @@ metadata:
 spec:
   project: previews
   source:
-    repoURL: https://github.com/gleegaye/gitops/tree/main/argocd/temp-env
+    repoURL: https://github.com/gleegaye/gitops.git
     targetRevision: HEAD
-    path: helm
+    path: argocd/temp-env/helm
   destination:
     server: https://kubernetes.default.svc
     namespace: previews
