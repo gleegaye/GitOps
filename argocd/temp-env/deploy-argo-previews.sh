@@ -69,6 +69,12 @@ export IMAGE_TAG=2.6.2
 
 export HOSTNAME=$APP_ID.$INGRESS_HOST.nip.io
 
+
+cat preview.yaml \                                                                                                ✔
+    | kyml tmpl -e REPO -e APP_ID -e IMAGE_TAG -e HOSTNAME \
+    | tee $REPO/helm/templates/$APP_ID.yaml
+
+    
 cat preview.yaml \
     | kyml tmpl -e REPO -e APP_ID -e IMAGE_TAG -e HOSTNAME \
     | tee helm/templates/$APP_ID.yaml
