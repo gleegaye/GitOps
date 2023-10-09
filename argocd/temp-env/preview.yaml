@@ -9,7 +9,7 @@ spec:
   project: previews
   source:
     path: helm
-    repoURL: https://github.com/gleegaye/gitops/tree/main/argocd/temp-env/{{.REPO}}.git
+    repoURL: https://github.com/gleegaye/gitops/tree/main/argocd/temp-env/helm/{{.REPO}}.git
     targetRevision: HEAD
     helm:
       values: |
